@@ -31,7 +31,15 @@
 */
 
 //CODE HERE
+let pizza = {
+    name: "pepperoni pizza",
+    price: 8.98,
+    category: "entree",
+    popularity: 80,
+    rating:9.5,
+    tags: ["family style", "hand tossed classic", "cheese", "pepperoni"]
 
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,7 +52,9 @@
 
 //CODE HERE
 
+console.log("popularity:" + pizza.popularity);
 
+// 80% out of 100%
 /*
     Second, log the second tag in your pizza's
     tags array.
@@ -54,6 +64,7 @@
 
 //CODE HERE
 
+console.log("second tag:" + pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -63,7 +74,8 @@
 */
 
 //CODE HERE
-
+pizza.price = 8.98;
+console.log("New destructured price:" + pizza.price);
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +86,7 @@
 
 //CODE HERE
 
+console.log("pizza category:" + pizza.category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -89,7 +102,52 @@
 
 //CODE HERE
 
+let foodArr = [
+{
+    name: "Starter salad",
+    price: 4.98,
+    category: "appetizer",
+    popularity: 30,
+    rating:5.5,
+    tags: ["family style", "classis", "romain", "tomato", "onion"]
 
+},
+ {
+    name: "cheese sticks",
+    price: 5.99,
+    category: "appetizer",
+    popularity: 75,
+    rating:7.5,
+    tags: ["family style", "mostarella", "cheese", "dipping sauce"]
+
+},
+{
+name: "garlic sticks",
+price: 5.48,
+category: "appetizer",
+popularity: 50,
+rating:6.5,
+tags: ["family style", "garlic bread", "cheese dips", "home baked bread"]
+},
+{
+   name: "classic cheese pizza",
+   price: 7.99,
+   category: "entree",
+   popularity: 85,
+   rating:9.6,
+   tags: ["family style", "hand tossed classic", "cheese", "garlic crust"]
+
+},
+{
+   name: "supreme pizza",
+   price: 10.98,
+   category: "entree",
+   popularity: 70,
+   rating:9.0,
+   tags: ["family style", "hand tossed classic", "cheese", "veggie toppings","your choice of 6"]
+
+},
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -105,7 +163,7 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter("veggie toppings")
 
 
 
